@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body style="background-color:black; color: white;">
+    <div class="scroll-overflow">
+        <nav class="navbar navbar-expand-lg fixed-top p-2" >
+            <div class="container">
+                <a class="navbar-brand flexcenter" href=""><img id="logo" src="assets/logo.jpg" alt=""><span style="margin-left: 10px;color: white;font-family: Protest Guerrilla,sans-serif;font-weight: 600;
+        font-style: normal;">AK ELECTRONICS</span></a>
+                <button id="menu-button"
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="/Products.html"
+                                id="dropdownId"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Products</a
+                            >
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownId"
+                            >
+                                <a class="dropdown-item m-0 px-3" href="/Products.html#mobile-phones"
+                                    >Mobiles</a
+                                >
+                                <a class="dropdown-item m-0 px-3" href="/Products.html#lap-sec"
+                                    >Laptops</a
+                                >
+                                <a class="dropdown-item m-0 px-3" href="/Products.html#Tv-sec"
+                                    >Smart  TV's</a
+                                >
+                                <a class="dropdown-item m-0 px-3" href="/Products.html#home-appl-sec"
+                                    >Home Appliances</a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="/Mobile_Accessories.html"
+                                id="dropdownId"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Mobile Accessories</a
+                            >
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownId"
+                            >
+                                <a class="dropdown-item m-0 px-3" href="Mobile_Accessories.html#cover-sec"
+                                    >Cases & Covers</a
+                                >
+                                <a class="dropdown-item m-0 px-3" href="Mobile_Accessories.html#charger-sec"
+                                    >Chargers & Power Banks</a
+                                >
+                                <a class="dropdown-item m-0 px-3" href="Mobile_Accessories.html#earphones-sec"
+                                    >Headphones & Earbuds</a
+                                >
+                                <a class="dropdown-item m-0 px-3" href="Mobile_Accessories.html#protectors-sec"
+                                    >Screen Protectors</a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input
+                            class="form-control me-sm-2"
+                            type="text"
+                            id="search"
+                            placeholder="Search"
+                        />
+                        <button
+                            class="btn text-light my-2 my-sm-0"
+                            type="submit"
+                        >
+                        <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                   
+                </div>
+                <div class="cart-icon">
+                    <i class="bi bi-heart"></i>
+                    <a href="cart.html"><i class="bi bi-cart"></i></a>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+        <section class="container-fluid p-0">
+            <div id="banner" class="carousel slide"data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel-image banner1">
+                        <div class="banner-content container animate__animated animate__zoomIn">
+                            <h1>Trending Mobiles of 2024</h1>
+                            <p>Stay ahead of the curve with the most advanced smartphones of the year. <br>Find the perfect device that fits your lifestyle.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-image banner2">
+                        <div class="banner-content container animate__animated animate__zoomIn">
+                            <h1>Immerse Yourself in <br> Unmatched Visuals.</h1>
+                            <p>Bring the cinema experience home with the latest in TV technology.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-image banner3">
+                        <div class="banner-content container animate__animated animate__zoomIn">
+                            <h1>Transform Your Home into <br> a Smart Haven.</h1>
+                            <p>Control your environment with the touch of a button or your voice</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev"data-bs-target="#banner" data-bs-slide="prev"><i class="bi bi-chevron-compact-left"></i></button>
+                <button class="carousel-control-next"data-bs-target="#banner" data-bs-slide="next"><i class="bi bi-chevron-compact-right"></i></button>
+            </div>
+        </section>
+        <section class="container-fluid p-5 phones">
+            <h2>Top Mobiles</h2>
+            <p class="px-5 mt-5">Stay connected with the latest in smartphone innovation, designed to fit every lifestyle and budget. Whether you're a tech enthusiast, a social media maven, or someone who needs a reliable device for everyday use, our wide selection of smartphones has something for everyone. Experience the power of high-performance processors that ensure smooth multitasking and effortless app navigation. Capture life's moments in stunning detail with advanced camera systems that make every photo and video a masterpiece.</p>
+            <div class="row p-5">
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/iphone.webp" alt="">
+                        <figcaption>
+                            <h5>Apple iPhone 15 Pro Max</h5>
+                            <p>Storage: 256GB, 512GB, 1TB</p>
+                            <p>RAM: 8GB, 12GB</p>
+                            <p>Key Features: Dynamic Island, A17 Bionic chip, ProMotion display, Triple camera system</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>1,50,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>1,25,000</p>
+                                <button class="add-to-cart-btn">Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/s24.webp" alt="">
+                        <figcaption>
+                            <h5>Samsung Galaxy S24 Ultra</h5>
+                            <p>Storage: 256GB, 512GB, 1TB</p>
+                            <p>RAM: 12GB, 16GB</p>
+                            <p>Key Features: 200MP camera, S Pen, Dynamic AMOLED 2X display, Long-lasting battery</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>1,40,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>1,20,000</p>
+                                <button class="add-to-cart-btn">Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/Google-Pixel-8-Pro.webp" alt="">
+                        <figcaption>
+                            <h5>Google Pixel 8 Pro</h5>
+                            <p>Storage: 128GB, 256GB, 512GB</p>
+                            <p>RAM: 12GB</p>
+                            <p>Key Features: Tensor G3 chip, Enhanced camera system, Pure Android experience, Timely updates</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>97,999</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>79,999</p>
+                                <button class="add-to-cart-btn">Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/oneplus.webp" alt="">
+                        <figcaption>
+                            <h5>OnePlus 12</h5>
+                            <p>Storage: 128GB, 256GB, 512GB</p>
+                            <p>RAM: 12GB, 16GB</p>
+                            <p>Key Features: Triple camera setup, Periscope lens, Exceptional zoom capabilities, Powerful processor</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>50,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>39,999</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+                <a href="Products.html"><h4 style="color: black;">View More <i class="bi bi-chevron-right"></i></h4></a>
+            </div>
+        </section>
+        <section class="container-fluid p-5 phones">
+            <h2>Laptops</h2>
+            <p class="px-5 mt-5">Discover the ideal laptop that seamlessly blends work, play, and everything in between. Whether you’re a seasoned professional, a dedicated student, or a passionate gamer, we have the perfect laptop to meet your unique demands and elevate your digital experience.For professionals, explore our selection of ultra-light notebooks designed for maximum productivity on the go. These sleek devices offer powerful performance, extended battery life, and portability, ensuring you stay efficient and connected, whether you're at the office, traveling, or working remotely.</p>
+            <div class="row p-5">
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/apple-lap.png" alt="">
+                        <figcaption>
+                            <h5>Apple MacBook Air (M2)</h5>
+                            <p>Key Features: Lightweight design, powerful M2 chip, long battery life, high-resolution display</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>96,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>85,000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/dell.avif" alt="">
+                        <figcaption>
+                            <h5>Dell XPS 13</h5>
+                            <p>Premium build quality, high-resolution touch display, comfortable keyboard, impressive performance</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>1,20,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>98,000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/hp.png" alt="">
+                        <figcaption>
+                            <h5>HP Spectre x360</h5>
+                            <p>HP Spectre x360 is a Versatile 2-in-1 design, powerful processor, long battery life, stylish appearance</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>1,37,999</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>1,15,999</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/asus.png" alt="">
+                        <figcaption>
+                            <h5>ASUS ROG Zephyrus G15</h5>
+                            <p>Key Features: Thin and light design, powerful gaming hardware, advanced cooling system, high-refresh-rate display</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>85,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>80,999</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid p-5 phones">
+            <h2>Smart TVs</h2>
+            <p class="px-5 mt-5">Whether you're creating a cinematic experience in your living room or looking for a compact solution for smaller spaces, we have the perfect TV to meet your needs. Enjoy the brilliance of 4K resolution, where every detail is captured with stunning precision, or step into the future with 8K TVs that offer unparalleled depth and realism. Smart TVs in our range bring the convenience of streaming your favorite shows, movies, and apps directly from your screen, offering endless entertainment options at your fingertips..</p>
+            <div class="row p-5">
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/lg-tv.webp" alt="">
+                        <figcaption>
+                            <h5>LG OLED C3 Series</h5>
+                            <p>Key Features: Self-lit OLED pixels for infinite contrast, Dolby Vision IQ for optimized picture quality, AI ThinQ for smart home integration</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>1,09,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>90,000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/sony-tv.webp" alt="">
+                        <figcaption>
+                            <h5> Sony A95K Series</h5>
+                            <p> QD-OLED panel for vibrant colors and deep blacks, Cognitive Processor XR for intelligent picture processing, Acoustic Surface Audio+ for immersive sound.</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>2,50,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>2,20,000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/pansonic-tv.png" alt="">
+                        <figcaption>
+                            <h5>Panasonic LZ2000 Series</h5>
+                            <p>Panasonic LZ2000 Series is a OLED panel with self-lit pixels, HCX Pro AI Processor for advanced picture processing, Dolby Atmos support for immersive audio.</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>47,999</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>32,999</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-6 col-lg-4 col-xl-3">
+                    <figure>
+                        <img class="w-100" src="assets/samsung-tv.webp" alt="">
+                        <figcaption>
+                            <h5>Samsung QN900C Series</h5>
+                            <p>Key Features: Enhanced brightness and contrast, Neo Quantum Processor for powerful image processing, Object Tracking Sound Pro for immersive audio.</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>8,85,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>7,80,999</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                        <div class="fav">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid Home-Appliances">
+            <h2>Home Appliances</h2>
+            <p class="px-5 mt-5">Upgrade your home with our range of innovative appliances designed for convenience and efficiency. From energy-saving refrigerators to smart ovens and washing machines, our products make everyday tasks easier and more enjoyable.Explore smart home appliances that you can control remotely, ensuring your home is always running smoothly, even when you're away.</p>
+            <div class="row px-5 mb-5">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" class="col-sm-12 col-md-6 col-xl-4 px-5">
+                    <figure>
+                        <img class="w-100" src="assets/samsung-fridge.avif" alt="">
+                        <figcaption>
+                            <h5>Samsung Bespoke Flex</h5>
+                            <p>Key Features: Customizable door panels, Flex Zone for flexible storage, Family Hub for smart features, automatic ice maker.</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>1,00,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>50,000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-12 col-md-6 col-xl-4 px-5">
+                    <figure>
+                        <img class="w-100" src="assets/lg-fridge.webp" alt="">
+                        <figcaption>
+                            <h5>LG InstaView Door-in-Door</h5>
+                            <p>Key Features: Door-in-Door compartment for easy access, Smart Diagnosis for troubleshooting, energy-efficient operation</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>1,20,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>60,000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" class="col-sm-12 col-md-6 col-xl-4 px-5">
+                    <figure>
+                        <img class="w-100" src="assets/oven.png" alt="">
+                        <figcaption>
+                            <h5>GE Profile Connected Oven</h5>
+                            <p>Key Features: WiFi connectivity for remote control, preheat notifications, built-in recipes, precise temperature control</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>2,60,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>1,30,000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row px-5">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" class="col-sm-12 col-md-6 col-xl-4 px-5">
+                    <figure>
+                        <img class="w-100" src="assets/lg-washing.png" alt="">
+                        <figcaption>
+                            <h5>LG AI Direct Drive Washing Machine</h5>
+                            <p>Key Features: AI-powered detergent and fabric softener dispenser, ThinQ technology for remote control, steam cleaning for hygienic laundry</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>50,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>25,000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 fifty-off p-5">
+                    <p>50% off</p>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" class="col-sm-12 col-md-6 col-xl-4 px-5">
+                    <figure>
+                        <img class="w-100" src="assets/samsung-washing.avif" alt="">
+                        <figcaption>
+                            <h5>Samsung AddWash Washing Machine</h5>
+                            <p>Key Features: ddWash door for late additions, Eco Bubble technology for efficient cleaning, SmartThings integration for smart home control</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>1,00,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>50,000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row px-5 mb-5">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" class="ccol-sm-12 col-md-6 col-xl-4 px-5">
+                    <figure>
+                        <img class="w-100" src="assets/bajaj-mixer.png_2000Wx3000H" alt="">
+                        <figcaption>
+                            <h5>Bajaj Rex Mixer Grinder</h5>
+                            <p>Key Features:  Powerful motor, stainless steel jars, overload protection, multiple speed settings</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>5,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>2,1000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600" class="col-sm-12 col-md-6 col-xl-4 px-5">
+                    <figure>
+                        <img class="w-100" src="assets/philips-mixer.webp" alt="">
+                        <figcaption>
+                            <h5>Philips Mixer Grinder</h5>
+                            <p>Key Features: Stylish design, spill-proof jars, easy to clean, multiple speed settings</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>6,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>3,000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" class="col-sm-12 col-md-6 col-xl-4 px-5">
+                    <figure>
+                        <img class="w-100" src="assets/butterfly-grinder.png" alt="">
+                        <figcaption>
+                            <h5>Butterfly Rhino Plus</h5>
+                            <p>Key Features: Shock proof ABS body,Easy detachable stainless steel drum, Cylindrical stone for uniform grinding</p>
+                            <div class="price">
+                                <p class="mrp"><i class="bi bi-currency-rupee"></i>5,000</p>
+                                <p class="offer"><i class="bi bi-currency-rupee"></i>2,1000</p>
+                                <button>Add to Cart <i class="bi bi-cart"></i></button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid top-brands">
+            <h2>Brands We Trust</h2>
+            <div class="row m-5 flexcenter">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="col-sm-6 col-lg-4 col-xl-2">
+                    <figure class="flexcenter"><img src="assets/brand-logos/apple.png" alt=""></figure>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="col-sm-6 col-lg-4 col-xl-2">
+                    <figure class="flexcenter"><img src="assets/brand-logos/Samsung_Logo.svg.png" alt=""></figure>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="col-sm-6 col-lg-4 col-xl-2">
+                    <figure class="flexcenter"><img src="assets/brand-logos/hp.png" alt=""></figure>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="col-sm-6 col-lg-4 col-xl-2">
+                    <figure class="flexcenter"><img src="assets/brand-logos/Dell_Logo.svg.png" alt=""></figure>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="col-sm-6 col-lg-4 col-xl-2">
+                    <figure class="flexcenter"><img src="assets/brand-logos/Asus-Logo-700x394.png" alt=""></figure>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="col-sm-6 col-lg-4 col-xl-2">
+                    <figure class="flexcenter"><img src="assets/brand-logos/sony.png" alt=""></figure>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid pt-5 px-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-xl-3 quick">
+                    <h4>Quick Links</h4>
+                    <a href="index.html"><p>Home</p></a> <br>
+                    <a href="Products.html"><p>Products</p></a> <br>
+                    <a href="Mobile_Accessories.html"><p>Mobile Accessories</p></a> <br>
+                    <a href="AboutUs.html"><p>About Us</p></a> <br>
+                    <a href="contactUs.html"><p>Contact Us</p></a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <h4>Customer Service</h4>
+                    <p>FAQ's</p>
+                    <p>Return Policy</p>
+                    <p>Warranty Information</p>
+                    <p>India</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <h4>Contact</h4>
+                    <p><b><i class="bi bi-telephone-fill"></i> Phone:</b> +91 9392968885</p>
+                    <p><b><i class="bi bi-envelope-at-fill"></i> Email:</b> akelectronics888@gmail.com</p>
+                    <p><b>Address: </b>Godarigunta,Kakinada,AP <br><br>533003,India</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <h4>Newsletter Signup</h4>
+                    <p>Stay updated with us.</p>
+                    <input type="email" placeholder="Enter your Email">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </div>
+                <div class="row pay-options mt-3 mb-3">
+                <h5>Payment Options: <img src="assets/payments/paypal.png" alt="">
+                    <img src="assets/payments/visa.png" alt="">
+                    <img src="assets/payments/card.png" alt="">
+                    <img src="assets/payments/google-pay.png" alt="">
+                    <img src="assets/payments/amazon-pay.png" alt=""></h5>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-6">
+                        <p id="right">© 2024 AK ELECTRONICS. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-6">
+                        <p id="follow">Follow Us: <i class="bi bi-instagram"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-threads-fill"></i>
+                            <i class="bi bi-twitter-x"></i> </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script src="cart.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </div>
+
+</body>
+
+</html>
