@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.replace(/\/[^/]*$/, ''); // Remove file name if present
+    const repoName = currentPath.split('/').filter(Boolean)[0]; // Get the repo name
+    const adjustedPath = window.location.pathname.replace(`/${repoName}`, ''); // Adjust for repo name
+
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .dropdown-menu .dropdown-item');
 
     navLinks.forEach(link => {
@@ -8,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!linkPath.startsWith('/')) {
             linkPath = '/' + linkPath;
         }
-        if (currentPath === linkPath || currentPath.startsWith(linkPath.split('#')[0])) {
+        // Adjust for GitHub Pages' path structure
+        if (adjustedPath === linkPath || adjustedPath.startsWith(linkPath.split('#')[0])) {
             link.classList.add('active');
             // Add active class to the parent dropdown for dropdown items
             if (link.closest('.dropdown-menu')) {
@@ -17,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
 
 
 // ==============================================================================================================================================
